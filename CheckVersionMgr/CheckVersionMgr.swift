@@ -32,11 +32,6 @@ public class CheckVersionMgr : NSObject{
     private override init() {}
     public static let shared = CheckVersionMgr()
     
-    private var window: UIWindow {
-        let appDelegate = UIApplication.shared.delegate
-        return (appDelegate?.window!)!
-    }
-    
     ///
     private var privateInfoModel: Result!
     
@@ -73,7 +68,10 @@ public class CheckVersionMgr : NSObject{
                                 weakSelf.openInApp(weakSelf.privateInfoModel)
                             }
                         }))
-                        weakSelf.window.rootViewController?.present(alertController, animated: true, completion: nil)
+//                            let appDelegate = UIApplication.shared.delegate
+//                            return (appDelegate?.window!)!
+                        UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
+//                        weakSelf.window.rootViewController?.present(alertController, animated: true, completion: nil)
 
                     } else {
                         //不需要更新
@@ -140,7 +138,7 @@ extension CheckVersionMgr: SKStoreProductViewControllerDelegate {
                 storeVC.dismiss(animated: true, completion: nil)
             }
         })
-        self.window.rootViewController?.present(storeVC, animated: true, completion: nil)
+        UIApplication.shared.keyWindow?.rootViewController?.present(storeVC, animated: true, completion: nil)
     }
     
     public func productViewControllerDidFinish(_ viewController: SKStoreProductViewController) {

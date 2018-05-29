@@ -11,8 +11,8 @@
 		E6A086E620BCF89B00A6B5E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A086E520BCF89B00A6B5E8 /* ViewController.swift */; };
 		E6A086EB20BCF89B00A6B5E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A086EA20BCF89B00A6B5E8 /* Assets.xcassets */; };
 		E6A086EE20BCF89B00A6B5E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A086EC20BCF89B00A6B5E8 /* LaunchScreen.storyboard */; };
-		E6A086FC20BD21DB00A6B5E8 /* CheckVersionMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A086FA20BD21DB00A6B5E8 /* CheckVersionMgr.swift */; };
-		E6A086FD20BD21DB00A6B5E8 /* AppInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A086FB20BD21DB00A6B5E8 /* AppInfoModel.swift */; };
+		E6A0870220BD3FA700A6B5E8 /* CheckVersionMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A0870020BD3FA700A6B5E8 /* CheckVersionMgr.swift */; };
+		E6A0870320BD3FA700A6B5E8 /* AppInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A0870120BD3FA700A6B5E8 /* AppInfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +22,8 @@
 		E6A086EA20BCF89B00A6B5E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6A086ED20BCF89B00A6B5E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6A086EF20BCF89B00A6B5E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6A086FA20BD21DB00A6B5E8 /* CheckVersionMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckVersionMgr.swift; sourceTree = "<group>"; };
-		E6A086FB20BD21DB00A6B5E8 /* AppInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoModel.swift; sourceTree = "<group>"; };
+		E6A0870020BD3FA700A6B5E8 /* CheckVersionMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckVersionMgr.swift; sourceTree = "<group>"; };
+		E6A0870120BD3FA700A6B5E8 /* AppInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +40,7 @@
 		E6A086D720BCF89B00A6B5E8 = {
 			isa = PBXGroup;
 			children = (
+				E6A086FF20BD3FA700A6B5E8 /* CheckVersionMgr */,
 				E6A086E220BCF89B00A6B5E8 /* CheckUpdateMgrDemo */,
 				E6A086E120BCF89B00A6B5E8 /* Products */,
 			);
@@ -58,7 +59,6 @@
 			children = (
 				E6A086E320BCF89B00A6B5E8 /* AppDelegate.swift */,
 				E6A086E520BCF89B00A6B5E8 /* ViewController.swift */,
-				E6A086F920BD21DB00A6B5E8 /* CheckVersionMgr */,
 				E6A086EA20BCF89B00A6B5E8 /* Assets.xcassets */,
 				E6A086EC20BCF89B00A6B5E8 /* LaunchScreen.storyboard */,
 				E6A086EF20BCF89B00A6B5E8 /* Info.plist */,
@@ -66,11 +66,11 @@
 			path = CheckUpdateMgrDemo;
 			sourceTree = "<group>";
 		};
-		E6A086F920BD21DB00A6B5E8 /* CheckVersionMgr */ = {
+		E6A086FF20BD3FA700A6B5E8 /* CheckVersionMgr */ = {
 			isa = PBXGroup;
 			children = (
-				E6A086FA20BD21DB00A6B5E8 /* CheckVersionMgr.swift */,
-				E6A086FB20BD21DB00A6B5E8 /* AppInfoModel.swift */,
+				E6A0870020BD3FA700A6B5E8 /* CheckVersionMgr.swift */,
+				E6A0870120BD3FA700A6B5E8 /* AppInfoModel.swift */,
 			);
 			path = CheckVersionMgr;
 			sourceTree = "<group>";
@@ -147,8 +147,8 @@
 			files = (
 				E6A086E620BCF89B00A6B5E8 /* ViewController.swift in Sources */,
 				E6A086E420BCF89B00A6B5E8 /* AppDelegate.swift in Sources */,
-				E6A086FC20BD21DB00A6B5E8 /* CheckVersionMgr.swift in Sources */,
-				E6A086FD20BD21DB00A6B5E8 /* AppInfoModel.swift in Sources */,
+				E6A0870220BD3FA700A6B5E8 /* CheckVersionMgr.swift in Sources */,
+				E6A0870320BD3FA700A6B5E8 /* AppInfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +290,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sctengsen.PandaPia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qxyer.CheckUpdateMgrDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +307,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sctengsen.PandaPia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qxyer.CheckUpdateMgrDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
