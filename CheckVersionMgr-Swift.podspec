@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "CheckVersionMgr-Swift"
   s.version      = "0.0.1"
-  s.summary      = "Version Check Manager for iOS, Swift."
+  s.summary      = "APP Version Check Manager."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                  APP 版本检查提示库,可设置间隔时间,跳转方式(APP内打开/App Store打开),支持系统原生 AlertController提示和自定义弹窗提示
+		APP 版本检查提示库,可设置两次提醒的间隔,跳转方式(inApp/App Store),支持自定义弹窗和系统弹窗两种提示方式
                    DESC
 
-  s.homepage     = "https://github.com/xingfuqiu/CheckVersionMgr"
+  s.homepage     = "https://github.com/xingfuqiu/CheckVersionMgr.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
