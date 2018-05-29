@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
   s.author       = { "xingfuqiu" => "xingfuqiu@gmail.com" }
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/xingfuqiu/CheckVersionMgr.git", :tag => "#{s.version}" }
-  s.source_files = "CheckVersionMgr"
+  s.source_files = "CheckVersionMgr/*.swift"
 end
